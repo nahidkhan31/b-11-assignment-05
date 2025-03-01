@@ -168,6 +168,7 @@ document.getElementById('com6-btn').addEventListener('click', function(event){
     document.getElementById("com6-btn").disabled = true;
 
      alert("Board update Successfully");
+     alert("Congratulation!!! You have completed all the current task")
   }
   
 })
