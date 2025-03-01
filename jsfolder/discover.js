@@ -36,12 +36,36 @@ document.getElementById('com-btn').addEventListener('click', function(event){
       document.getElementById("number").innerText=total;
       document.getElementById('main-number').innerText=sum;
 
-     
+     const activity = document.getElementById('activity');
+     const p =document.createElement("p");
+     p.innerText =`You have Completed the task Fix Mobile Button issue at..... `
+     activity.appendChild(p)
+     document.getElementById('activity').style.display = "block";
 
+      alert("Board update Successfully");
+
+   }
+})
+
+document.getElementById('com2-btn').addEventListener('click', function(event){
+    const number= getInnerTextById('number');
+    const mainNumber = getInnerTextById('main-number');
+          event.preventDefault;
+   if(number!==isNaN || mainNumber!==isNaN){
+      const total = number - 1;
+      const sum = mainNumber + 1;
+      document.getElementById("number").innerText=total;
+      document.getElementById('main-number').innerText=sum;
+
+     const activity = document.getElementById('activity');
+     const p =document.createElement("p");
+     p.innerText =`You have Completed the task Fix Mobile Button issue at..... `
+     activity.appendChild(p)
 
       alert("Board update Successfully");
    }
 })
+
 
 
 

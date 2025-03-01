@@ -3,3 +3,11 @@ function getInnerTextById(id){
     const convertedNumber = parseFloat(number);
     return convertedNumber;
 }
+
+
+document.getElementById('final-btn').addEventListener('click', function(event){
+          event.preventDefault;
+          document.getElementById('activity').style.display = "none";
+          
+
+})
