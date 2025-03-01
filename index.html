@@ -20,7 +20,7 @@
                 <div class="flex justify-between gap-10">
                     <div class="flex justify-between bg-slate-400 rounded-lg p-2">
                         <img class="w-2/4" src="assets/checkbox.png" alt="">
-                        <h1 class="font-bold">23</h1>
+                        <h1 id="main-number" class="font-bold">23</h1>
                     </div>
                     <div>
                         <img src="assets/theme-btn.png" alt="">
@@ -41,7 +41,7 @@
                 </div>
                 <div class="my-auto">
                     <p class="text-gray-500">Task Assiged</p>
-                    <p class="text-2xl font-bold">6</p>
+                    <p id="number" class="text-2xl font-bold">6</p>
                 </div>
              </div>
              <div id="discover-btn" class="bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-xl p-4 flex gap-5 col-span-2">
@@ -50,7 +50,7 @@
              </div>
              <div class="bg-white shadow-md rounded-xl p-3 flex gap-5 col-span-1">
                 <div class="ml-5 my-auto"><img src="assets/calender.png" alt=""></div>
-                <div class="my-auto text-gray-500">Tue Feb 25 2025</div>
+                <div id="date" class="my-auto text-gray-500"></div>
              </div>
           </div>
           <!-- second section -->
@@ -67,7 +67,7 @@
                         <p class="text-gray-500 font-semibold">Deadline<br><span class="text-black">21 March 2025</span></p>
                     </div>
                     <div class="my-auto">
-                        <button class="btn btn-primary mt-3">Completed</button>
+                        <button id="com-btn" class="btn btn-primary mt-3">Completed</button>
                     </div>
                 </div>
                </div>
@@ -175,6 +175,7 @@
 
 
     <script src="jsfolder/discover.js"></script>
+    <script src="jsfolder/alret.js"></script>
 </body>
 
 </html>
