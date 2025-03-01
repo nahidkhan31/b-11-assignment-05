@@ -1,3 +1,16 @@
+document.getElementById('color-code').addEventListener('click', function(event){
+   event.preventDefault;
+   document.body.style.backgroundColor = allColor();
+})
+
+
+
+
+
+
+
+
+
 document.getElementById('discover-btn').addEventListener('click',function(event){
          event.preventDefault;
          window.location.href="./index2.html";
@@ -38,7 +51,7 @@ document.getElementById('com-btn').addEventListener('click', function(event){
 
      const activity = document.getElementById('activity');
      const p =document.createElement("p");
-     p.innerText =`You have Completed the task Fix Mobile Button issue at..... `
+     p.innerText =`You have Completed the task Fix Mobile Button issue at `
      activity.appendChild(p)
      document.getElementById('activity').style.display = "block";
      document.getElementById("com-btn").disabled = true;
@@ -60,7 +73,7 @@ document.getElementById('com2-btn').addEventListener('click', function(event){
 
      const activity = document.getElementById('activity');
      const p =document.createElement("p");
-     p.innerText =`You have Completed the task Fix Mobile Button issue at..... `
+     p.innerText =`You have Completed the task Add Pay Success Modal at..... `
      activity.appendChild(p)
 
      document.getElementById('activity').style.display = "block";
@@ -82,7 +95,7 @@ document.getElementById('com3-btn').addEventListener('click', function(event){
 
     const activity = document.getElementById('activity');
     const p =document.createElement("p");
-    p.innerText =`You have Completed the task Fix Mobile Button issue at..... `
+    p.innerText =`You have Completed the task Add new reaction at..... `
     activity.appendChild(p)
 
     document.getElementById('activity').style.display = "block";
@@ -104,7 +117,7 @@ document.getElementById('com4-btn').addEventListener('click', function(event){
 
     const activity = document.getElementById('activity');
     const p =document.createElement("p");
-    p.innerText =`You have Completed the task Fix Mobile Button issue at..... `
+    p.innerText =`You have Completed the task Fix Video Loading Issue at..... `
     activity.appendChild(p)
 
     document.getElementById('activity').style.display = "block";
@@ -126,7 +139,7 @@ document.getElementById('com5-btn').addEventListener('click', function(event){
 
     const activity = document.getElementById('activity');
     const p =document.createElement("p");
-    p.innerText =`You have Completed the task Fix Mobile Button issue at..... `
+    p.innerText =`You have Completed the task Integrate Al search at..... `
     activity.appendChild(p)
 
     document.getElementById('activity').style.display = "block";
@@ -148,7 +161,7 @@ document.getElementById('com6-btn').addEventListener('click', function(event){
 
     const activity = document.getElementById('activity');
     const p =document.createElement("p");
-    p.innerText =`You have Completed the task Fix Mobile Button issue at..... `
+    p.innerText =`You have Completed the task Review Ami Probashi Site at..... `
     activity.appendChild(p)
 
     document.getElementById('activity').style.display = "block";

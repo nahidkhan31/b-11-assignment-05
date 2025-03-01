@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 
-<body class="bg-zinc-200">
+<body>
     <header class="">
         <nav>
             <div class="navbar bg-base-300 shadow-md flex justify-between px-4 rounded-lg">
@@ -22,19 +22,19 @@
                         <img class="w-2/4" src="assets/checkbox.png" alt="">
                         <h1 id="main-number" class="font-bold">23</h1>
                     </div>
-                    <div>
+                    <div id="color-code">
                         <img src="assets/theme-btn.png" alt="">
                     </div>
                 </div>
             </div>
         </nav>
     </header>
-    <main class="p-6 bg-gray-50 min-h-screen">
-        <div class="grid grid-cols-5 gap-4 mt-4">
+    <main class="p-6 min-h-screen">
+        <div class="lg:grid grid-cols-5 gap-4 mt-4">
             <!-- first part -->
-            <div class="col-span-4">
+            <div class="lg:col-span-4">
                 <!-- first section -->
-                <div class="grid grid-cols-4 gap-3">
+                <div class="lg:grid grid-cols-4 gap-3">
                     <div class="bg-white shadow-md rounded-xl p-3 flex col-span-1 gap-8">
                         <div class="my-auto ml-4">
                             <img class="" src="assets/checkbox.png" alt="">
@@ -45,20 +45,20 @@
                         </div>
                     </div>
                     <div id="discover-btn"
-                        class="bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-xl p-4 flex gap-5 col-span-2">
+                        class="bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-xl p-4 lg:flex gap-5 col-span-2">
                         <div class="ml-14"><img class="w-16 h-16" src="assets/board.png" alt=""></div>
                         <div class="my-auto">
                             <p class="text-xl font-semibold">Discover Something New Today!</p>
                         </div>
                     </div>
-                    <div class="bg-white shadow-md rounded-xl p-3 flex gap-5 col-span-1">
+                    <div class="bg-white shadow-md rounded-xl p-3 lg:flex gap-5 col-span-1">
                         <div class="ml-5 my-auto"><img src="assets/calender.png" alt=""></div>
                         <div id="date" class="my-auto text-gray-500"></div>
                     </div>
                 </div>
                 <hr class="border border-2 border-dashed border-l-gray-500 mt-6">
                 <!-- second section -->
-                <div class="grid grid-cols-3 gap-3 mt-3">
+                <div class="gap-3 lg:grid grid-cols-3 gap-3 mt-3">
                     <!-- card section -->
                     <div class="shadow-md rounded-xl p-4 bg-gray-300">
                         <p class="text-gray-500 ml-3">Shop Ease</p>
@@ -171,7 +171,7 @@
             </div>
 
             <!-- second part -->
-            <div class="bg-white p-3 text-center">
+            <div class="bg-white p-3 text-center rounded-lg">
                 <div class="">
                     <div class="flex justify-center gap-2">
                         <div class="">
