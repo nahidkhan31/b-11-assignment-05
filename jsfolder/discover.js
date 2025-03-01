@@ -169,6 +169,7 @@ document.getElementById('com6-btn').addEventListener('click', function(event){
 
      alert("Board update Successfully");
   }
+  
 })
 
 
