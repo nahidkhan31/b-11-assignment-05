@@ -39,12 +39,11 @@ document.getElementById('date').innerText = formatDate(new Date());
 
 // btn section
 
-document.getElementById('com-btn').addEventListener('click', function(event){
+document.getElementById('com-btn').addEventListener('click', function(){
     const number= getInnerTextById('number');
     const mainNumber = getInnerTextById('main-number');
     const cardTitle= document.getElementById('card-title-1');
-          event.preventDefault;
-   if(number!==isNaN || mainNumber!==isNaN){
+   
       const total = number - 1;
       const sum = mainNumber + 1;
       document.getElementById("number").innerText=total;
@@ -61,7 +60,7 @@ document.getElementById('com-btn').addEventListener('click', function(event){
 
       alert("Board update Successfully");
 
-   }
+
 })
 // second btn
 document.getElementById('com2-btn').addEventListener('click', function(event){
