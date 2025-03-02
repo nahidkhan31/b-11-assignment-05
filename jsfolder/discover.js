@@ -42,6 +42,7 @@ document.getElementById('date').innerText = formatDate(new Date());
 document.getElementById('com-btn').addEventListener('click', function(event){
     const number= getInnerTextById('number');
     const mainNumber = getInnerTextById('main-number');
+    const cardTitle= document.getElementById('card-title-1');
           event.preventDefault;
    if(number!==isNaN || mainNumber!==isNaN){
       const total = number - 1;
@@ -50,9 +51,11 @@ document.getElementById('com-btn').addEventListener('click', function(event){
       document.getElementById('main-number').innerText=sum;
 
      const activity = document.getElementById('activity');
-     const p =document.createElement("p");
-     p.innerText =`You have Completed the task Fix Mobile Button issue at `
-     activity.appendChild(p)
+     const div =document.createElement("div");
+     div.innerHTML =` <div class="p-2 bg-slate-200 mx-2 my-3 rounded-md">
+              <p class ="p-2">You have completed <span class="text-blue-500 font-semibold">${cardTitle}</span> at ${currentTime}</p>
+           </div>`
+     activity.appendChild(div)
      document.getElementById('activity').style.display = "block";
      document.getElementById("com-btn").disabled = true;
 
@@ -64,6 +67,7 @@ document.getElementById('com-btn').addEventListener('click', function(event){
 document.getElementById('com2-btn').addEventListener('click', function(event){
     const number= getInnerTextById('number');
     const mainNumber = getInnerTextById('main-number');
+    const cardTitle1= document.getElementById('card-title-2');
           event.preventDefault;
    if(number!==isNaN || mainNumber!==isNaN){
       const total = number - 1;
@@ -72,9 +76,11 @@ document.getElementById('com2-btn').addEventListener('click', function(event){
       document.getElementById('main-number').innerText=sum;
 
      const activity = document.getElementById('activity');
-     const p =document.createElement("p");
-     p.innerText =`You have Completed the task Add Pay Success Modal at..... `
-     activity.appendChild(p)
+     const div =document.createElement("div");
+     div.innerHTML =`<div class="p-2 bg-slate-200 mx-2 my-3 rounded-md">
+              <p class ="p-2">You have completed <span class="text-blue-500 font-semibold">${cardTitle1}</span> at ${currentTime}</p>
+           </div>`
+     activity.appendChild(div)
 
      document.getElementById('activity').style.display = "block";
      document.getElementById("com2-btn").disabled = true;
@@ -86,6 +92,7 @@ document.getElementById('com2-btn').addEventListener('click', function(event){
 document.getElementById('com3-btn').addEventListener('click', function(event){
    const number= getInnerTextById('number');
    const mainNumber = getInnerTextById('main-number');
+   const cardTitle1= document.getElementById('card-title-3');
          event.preventDefault;
   if(number!==isNaN || mainNumber!==isNaN){
      const total = number - 1;
@@ -93,10 +100,12 @@ document.getElementById('com3-btn').addEventListener('click', function(event){
      document.getElementById("number").innerText=total;
      document.getElementById('main-number').innerText=sum;
 
-    const activity = document.getElementById('activity');
-    const p =document.createElement("p");
-    p.innerText =`You have Completed the task Add new reaction at..... `
-    activity.appendChild(p)
+     const activity = document.getElementById('activity');
+     const div =document.createElement("div");
+     div.innerHTML =`<div class="p-2 bg-slate-200 mx-2 my-3 rounded-md">
+              <p class ="p-2">You have completed <span class="text-blue-500 font-semibold">${cardTitle1}</span> at ${currentTime}</p>
+           </div>`
+     activity.appendChild(div)
 
     document.getElementById('activity').style.display = "block";
     document.getElementById("com3-btn").disabled = true;
@@ -114,11 +123,15 @@ document.getElementById('com4-btn').addEventListener('click', function(event){
      const sum = mainNumber + 1;
      document.getElementById("number").innerText=total;
      document.getElementById('main-number').innerText=sum;
+    
+     const cardTitle1= document.getElementById('card-title-4');
+     const activity = document.getElementById('activity');
+     const div =document.createElement("div");
+     div.innerHTML =`<div class="p-2 bg-slate-200 mx-2 my-3 rounded-md">
+              <p class ="p-2">You have completed <span class="text-blue-500 font-semibold">${cardTitle1}</span> at ${currentTime}</p>
+           </div>`
+     activity.appendChild(div)
 
-    const activity = document.getElementById('activity');
-    const p =document.createElement("p");
-    p.innerText =`You have Completed the task Fix Video Loading Issue at..... `
-    activity.appendChild(p)
 
     document.getElementById('activity').style.display = "block";
     document.getElementById("com4-btn").disabled = true;
@@ -137,10 +150,13 @@ document.getElementById('com5-btn').addEventListener('click', function(event){
      document.getElementById("number").innerText=total;
      document.getElementById('main-number').innerText=sum;
 
-    const activity = document.getElementById('activity');
-    const p =document.createElement("p");
-    p.innerText =`You have Completed the task Integrate Al search at..... `
-    activity.appendChild(p)
+     const cardTitle1= document.getElementById('card-title-5');
+     const activity = document.getElementById('activity');
+     const div =document.createElement("div");
+     div.innerHTML =`<div class="p-2 bg-slate-200 mx-2 my-3 rounded-md">
+              <p class ="p-2">You have completed <span class="text-blue-500 font-semibold">${cardTitle1}</span> at ${currentTime}</p>
+           </div>`
+     activity.appendChild(div)
 
     document.getElementById('activity').style.display = "block";
     document.getElementById("com5-btn").disabled = true;
@@ -159,16 +175,20 @@ document.getElementById('com6-btn').addEventListener('click', function(event){
      document.getElementById("number").innerText=total;
      document.getElementById('main-number').innerText=sum;
 
-    const activity = document.getElementById('activity');
-    const p =document.createElement("p");
-    p.innerText =`You have Completed the task Review Ami Probashi Site at..... `
-    activity.appendChild(p)
+     const cardTitle1= document.getElementById('card-title-6');
+     const activity = document.getElementById('activity');
+     const div =document.createElement("div");
+     div.innerHTML =`<div class="p-2 bg-slate-200 mx-2 my-3 rounded-md">
+              <p class ="p-2">You have completed <span class="text-blue-500 font-semibold">${cardTitle1}</span> at ${currentTime}</p>
+           </div>`
+     activity.appendChild(div)
+
 
     document.getElementById('activity').style.display = "block";
     document.getElementById("com6-btn").disabled = true;
 
      alert("Board update Successfully");
-     alert("Congratulation!!! You have completed all the current task")
+     alert("Congratulation!!! You have completed all the current task")  
   }
   
 })
